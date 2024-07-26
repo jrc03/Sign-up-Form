@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @font-face {
@@ -9,8 +10,10 @@ body{
 }
 .imgContainer{
     display: flex;
+align-items: center;
     position: relative;
     width: 30%;
+    justify-content: center;
   
 }
 #background-image{
@@ -23,11 +26,21 @@ body{
 
 #logo{
     width: 20%;
+}
+#thanks{
+    align-self: flex-end;
+    position: absolute;
+    color: white;
+}
 
+a{
+    color: white;
+  
 }
 
 .logoContainer{
     display: flex;
+  
     position:absolute;
     width: 100%;
     height: 20%;
@@ -45,4 +58,101 @@ body{
     padding: 10px;
     margin: 0px;
  }
+.container{
+    display: flex;
+ 
+}
 
+.captionT{
+    padding: 20px;
+    font-size: larger;
+    font-weight: 500;
+    margin-right: 400px;
+
+}
+
+.caption{
+    border: 2px solid black;
+    width: 50%;
+    background-color: rgb(255, 255, 255 /50%);
+    width: 70%;
+}
+
+form{
+    padding: 40px;
+    padding-top: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+ul,li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+ 
+   
+  
+}
+
+.inputCont{
+display: flex;
+   height: 50%;
+width: fit-content;
+gap: 70px;
+ 
+}
+
+
+
+#accBtn{
+    background-color: #596D48;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    
+    font-size: large;
+    border:  2px solid #596D48;
+}
+#accBtn:hover{
+    cursor: pointer;
+    background-color: white;
+    border:  2px solid #596D48;
+    color: black;
+}
+.accountContainer{
+
+    margin: 30px;
+}
+#accAnchor{
+    font-weight: 700;
+    color: #596D48;
+    text-decoration: none;
+}
+
+
+input:not(#accBtn){
+margin: 10px;
+margin-left: 0px;
+border-radius: 3px;
+border: 1px solid #E5E7EB;
+height: 30px;
+width: 220px;
+
+
+}
+label{
+    font-size: 14px;
+    font-weight: 500;
+}
+input:focus{
+    border: 2px solid red;
+  
+   
+}
+
+input:invalid{
+   
+    outline: 1px solid red;
+
+}

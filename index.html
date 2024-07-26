@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Form!</title>
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="container">
     <div class="imgContainer">
         
         <div class="logoContainer">
@@ -18,9 +18,65 @@
                 Odin
             </p>
         </div>
-
+<p id="thanks">
+    Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"target="_blank">Unsplash</a>
+  
+</p>
         <img src="./media/halie-west-25xggax4bSA-unsplash.jpg" alt="Background Image" id="background-image">
     </div>
+    
+
+    <div class="caption">
+        <p class="captionT">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+            Sign up to get started.
+        </p>
+        <p class="captionT">You know you want to.</p>
+       <div class="formDiv">
+        <form action="#" method="get">
+            <p class="captionT">Lets do this!</p>
+            <div class="inputCont">
+                <div class="idk1">
+                    <ul>
+                        <li>
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName">
+                        </li>
+                        <li>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="Email">
+                        </li>
+                        <li>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" pattern="/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/" required>
+                        </li>
+                    </ul>
+                </div>
+                <div class="idk2">
+                    <ul>
+                        <li>
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName">
+                        </li>
+                        <li>
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="text" id="phoneNumber">
+                        </li>
+                        <li>
+                            <label for="repeatPassword">REPEAT PASSWORD</label>
+                            <input type="password" id="repeatPassword" pattern="/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/" required>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        <div class="accountContainer">
+            <input type="button" value="Create Account" id="accBtn">
+            <p>Already have an account? <a  id="accAnchor" href="#">Log In</a></p>
+        
+           </div>
+    </div>
+   
+</div>
     
 </body>
 </html>
