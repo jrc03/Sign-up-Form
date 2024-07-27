@@ -1,6 +1,6 @@
-body{
-    margin: 0px;
-    padding: 0px;
+body {
+    margin: 0;
+    padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -8,151 +8,140 @@ body{
     font-family: odin-font;
     src: url(./media/Norse-Bold.otf);
 }
-.imgContainer{
+
+.imgContainer {
     display: flex;
-align-items: center;
+    align-items: center;
     position: relative;
     width: 30%;
     justify-content: center;
-  
-}
-#background-image{
-    
-    height: 100vh;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
 }
 
-#logo{
+#background-image {
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
     width: 20%;
 }
-#thanks{
+
+#thanks {
     align-self: flex-end;
     position: absolute;
     color: white;
 }
 
-a{
+a {
     color: white;
-  
 }
 
-.logoContainer{
+.logoContainer {
     display: flex;
-  
-    position:absolute;
+    position: absolute;
     width: 100%;
     height: 20%;
-    background-color: rgb(0 0 0 / 60%);
-    top:200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 200px;
     align-items: center;
     justify-content: center;
     gap: 15px;
 }
- #logoText{
+
+#logoText {
     font-family: odin-font;
     font-size: 100px;
     color: white;
     text-align: center;
     padding: 10px;
-    margin: 0px;
- }
-.container{
-    display: flex;
- 
+    margin: 0;
 }
 
-.captionT{
+.container {
+    display: flex;
+}
+
+.captionT {
     padding: 20px;
     font-size: larger;
     font-weight: 500;
     margin-right: 400px;
-
 }
 
-.caption{
+.caption {
     border: 2px solid black;
-    width: 50%;
-    background-color: rgb(255, 255, 255 /50%);
+    background-color: rgba(255, 255, 255, 0.5);
     width: 70%;
 }
 
-form{
+form {
     padding: 40px;
     padding-top: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
-ul,li{
+
+ul, li {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
- 
-   
-  
 }
 
-.inputCont{
-display: flex;
-   height: 50%;
-width: fit-content;
-gap: 70px;
- 
+.inputCont {
+    display: flex;
+    height: 50%;
+    width: fit-content;
+    gap: 70px;
 }
 
-
-
-#accBtn{
+#accBtn {
     background-color: #596D48;
     color: white;
     padding: 10px;
     border-radius: 8px;
-    
     font-size: large;
-    border:  2px solid #596D48;
+    border: 2px solid #596D48;
 }
-#accBtn:hover{
+
+#accBtn:hover {
     cursor: pointer;
     background-color: white;
-    border:  2px solid #596D48;
+    border: 2px solid #596D48;
     color: black;
 }
-.accountContainer{
 
+.accountContainer {
     margin: 30px;
 }
-#accAnchor{
+
+#accAnchor {
     font-weight: 700;
     color: #596D48;
     text-decoration: none;
 }
 
-
-input:not(#accBtn){
-margin: 10px;
-margin-left: 0px;
-border-radius: 3px;
-border: 1px solid #E5E7EB;
-height: 30px;
-width: 220px;
-
-
+input:not(#accBtn) {
+    margin: 10px 0 10px 0;
+    border-radius: 3px;
+    border: 1px solid #E5E7EB;
+    height: 30px;
+    width: 220px;
 }
-label{
+
+label {
     font-size: 14px;
     font-weight: 500;
 }
-input:focus{
-    border: 2px solid red;
-  
-   
+
+input:focus {
+    outline: 1px solid blue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-input:invalid{
-   
+input:user-invalid {
     outline: 1px solid red;
-
 }
+
